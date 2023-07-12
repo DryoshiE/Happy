@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="UTF-8"></meta>
+<!-- css読込 -->
+<link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
+<link rel="stylesheet" th:href="@{/css/com/base.css}">
+<link rel="stylesheet" th:href="@{/css/com/header.css}">
+<link rel="stylesheet" th:href="@{/css/com/menu.css}">
+<link rel="stylesheet" th:href="@{/css/com/contents.css}">
+</head>
+<body>
+	<!-- ヘッダー -->
+	<nav layout:replace="~{html/goal/header::header}"></nav>
+	<div class="base">
+		<!-- メニュー -->
+		<nav layout:replace="~{html/goal/menu::menu}"></nav>
+		<!-- コンテンツー -->
+		<nav layout:replace="~{html/goal/contents::contents}"></nav>
+	</div>
+</body>
+</html>
