@@ -1,4 +1,4 @@
-package com.goal.controller;
+package goal.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -10,6 +10,15 @@ public class GoalController {
 	
 	@RequestMapping(value="/goalSheet", method=RequestMethod.GET)
 	public String goalStartShow(Model model) {
+		
+		
+		return "html/goal/goal";
+		
+	}
+	
+	//テストSQL
+	@RequestMapping(value="/goalSheet/test", method=RequestMethod.GET)
+	public String goalTEST(Model model) {
 		
 		
 		return "html/goal/goal";

@@ -9,29 +9,3 @@
 .contents_btn_group {
 	margin: 15px;
 }
-/* グリッドグループ */
-.grid_group {
-	display: grid;
-	grid-template-columns: repeat(9, 1fr);
-	grid-template-rows: repeat(9, 1fr);
-	gap: 2px;
-	margin: auto;
-	height: 800px;
-	width: 1600px;
-}
-/* グリッド */
-.square {
-	background-color: #80ffff;
-	display: flex; /* 正方形内の要素を中央に配置するために flexbox を使用 */
-	justify-content: center; /* 水平方向に中央に配置 */
-	align-items: center; /* 垂直方向に中央に配置 */
-}
-/* グリッドの中のinput */
-.square input {
-	width: 100%; /* 正方形の幅いっぱいに広がるようにする */
-	height: 100%; /* 正方形の高さいっぱいに広がるようにする */
-	border: none; /* 枠線を削除 */
-	background-color: transparent; /* 背景色を透明にする */
-	text-align: center; /* テキストを中央に配置 */
-	font-size: 16px;
-}
